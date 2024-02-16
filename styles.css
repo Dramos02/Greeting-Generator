@@ -6,7 +6,7 @@ body {
     background-image: url('https://i.imgur.com/y0ctBZQ.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: fixed;
 }
 
 .container {
@@ -16,6 +16,12 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
@@ -60,3 +66,29 @@ button:hover {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+    
+  footer > p {
+      font-weight: bold;
+      color: white;
+      font-size: 24px;
+  }
+    
+  .zoom {
+      transition: transform .5s;
+      margin: 0 auto;
+  }
+    
+  .zoom:hover {
+      -ms-transform: scale(2); /* IE 9 */
+      -webkit-transform: scale(2); /* Safari 3-8 */
+      transform: scale(2); 
+  }
